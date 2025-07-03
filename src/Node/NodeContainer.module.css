@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-left: 18px;
+}
+
+.container img {
+  width: 100%;
+}
+
+.dragHandle {
+  padding: 6px;
+  cursor: grab;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dragHandle:hover {
+  opacity: 1;
+}
+
+.node-container {
+  margin: 12px 0;
+  padding: 12px 16px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  transition: background 0.2s, border 0.2s;
+}
+
+.node-container:hover {
+  background-color: #f9f9f9;
+  border-color: #cfcfcf;
+}
+
+.node-container.focused {
+  border-color: #6c63ff;
+  background-color: #f4f4ff;
+}

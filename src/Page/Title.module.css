@@ -1,0 +1,26 @@
+.title .container {
+  padding: 0 40px;
+  max-width: 900px;
+  margin: 40px auto 24px;
+}
+
+.title {
+  padding: 16px 24px;
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.title:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.title:focus-within {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
