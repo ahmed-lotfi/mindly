@@ -15,6 +15,10 @@ export const uploadImage = async (file?: File) => {
 
     return { filePath, fileName };
   } catch (e) {
-    toast.error(e.message);
+    if (e instanceof Error) {
+    console.error("Upload failed:", e.message);
+  } else {
+    console.error("Unknown error", e);
+  }
   }
 };
